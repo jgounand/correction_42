@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Intranet 42</title>
+<meta content="authenticity_token" name="csrf-param">
+<meta content="vq10bMHopPuvgVpAVFIrss8LbptxlYLVewtb4YsojJc=" name="csrf-token">
+<meta charset="utf-8">
+<meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" name="viewport">
+<meta content="yes" name="mobile-web-app-capable">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="translucent-black" name="apple-mobile-web-app-status-bar-style">
+<meta content="Intranet 42" name="apple-mobile-web-app-title">
+<meta content="on" http-equiv="cleartype">
+<link href="https://projects.intrav2.42.fr/assets/42_logo_black-0dcc25d1cdb873c2857bc80734364451.png" rel="icon" type="image/svg">
+<link href="https://projects.intrav2.42.fr/assets/42_logo_black-0dcc25d1cdb873c2857bc80734364451.png" rel="shortcut icon" type="image/svg">
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"></script>
+<![endif]-->
+<link href="Intranet%2042_fichiers/application-67163f0bcd73506f7aac76404e5db1e0.css" media="all" rel="stylesheet">
+<script src="Intranet%2042_fichiers/analytics.js" async=""></script><script src="Intranet%2042_fichiers/require-bda0ed7529a31c9f1b6d46ba76289e1b.js"></script><script>require.config({"baseUrl":"/assets","packages":["vendor","common","components","common/media","common/add_on","common/callback","common/modal","common/simple_form","common/typeahead","project","galaxy","galaxy/profile","galaxy/infoBox","galaxy/galaxy","animMaster"],"paths":{"components/main":"/assets/components/main-da74528cd0328ca18e8423a7a6d8bc8d","common/main":"/assets/common/main-3402b733f2164e5e57c8879a8140c484","vendor/main":"/assets/vendor/main-4b8237faef10e0239a586527ea77fb67","application":"/assets/application-72c248f520fc9561b8af8ee09d73fd92"},"shim":{"scrollspy":{"deps":["jquery"]},"vendor/video-dev":{"deps":["jquery"]},"vendor/video-markers":{"deps":["vendor/video-dev"]},"vendor/video-resolutions":{"deps":["vendor/video-dev"]},"datetimepicker":{"deps":["jquery","moment"]},"rangeslider":{"deps":["jquery"]},"fullcalendar":{"deps":["jquery","moment"]},"jquery_nested_form":{"deps":["jquery"]},"highcharts-release":{"deps":["jquery"],"exports":"Highcharts"},"jquery-textcomplete":{"deps":["jquery"]},"chosen-jquery":{"deps":["jquery"]},"maxlength":{"deps":["jquery"]},"moment-twitter":{"deps":["moment"]},"jquery-ujs":{"deps":["jquery"]},"onScreen":{"deps":["jquery"]},"typeahead":{"deps":["jquery"]},"bloodhound":{"deps":["jquery"],"exports":"Bloodhound"},"bootstrap":{"deps":["jquery"]},"easel":{"exports":"createjs"},"tween":{"deps":["easel"],"exports":"Tween"},"stats":{"deps":["jquery"],"exports":"Stats"}}}); require(["application"]);</script>
+<script src="Intranet%2042_fichiers/application-72c248f520fc9561b8af8ee09d73fd92.js" data-requiremodule="application" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Intranet%2042_fichiers/main-4b8237faef10e0239a586527ea77fb67.js" data-requiremodule="vendor/main" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Intranet%2042_fichiers/main-3402b733f2164e5e57c8879a8140c484.js" data-requiremodule="common/main" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script></head><body class="" data-id="11184" data-url="//websocket.intrav2.42.fr/">
+<script>
+  var _notifications = {
+  "unread": [],
+  "read": []
+  };
+  
+  var _user = {"login":"login","id":11184};
+</script>
+<div style="top: 60px; left: 1041.9px;" class="notifications-container"><ul class="menu-drop-list"></ul></div>
+
+<div class="main-navbar">
+<div class="main-navbar-left">
+<div class="main-navbar-logo">
+<a href="https://profile.intrav2.42.fr/"><img alt="42" src="Intranet%2042_fichiers/42_logo-0e3c2f415e527aa6703482c3b9a4a7bd.svg">
+</a></div>
+<span class="hidden-sidebars main-menu-trigger lines-button x" data-trigger-menu="">
+<span class="lines"></span>
+</span>
+<form action="https://profile.intrav2.42.fr/searches/search" class="main-navbar-search hidden-xs js-search" data-user-url="https://profile.intrav2.42.fr/users/" method="get">
+<span style="position: relative; display: inline-block; direction: ltr;" class="twitter-typeahead"><input tabindex="-1" spellcheck="false" autocomplete="off" readonly="readonly" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: transparent none repeat scroll 0% 0%;" class="search-input tt-hint"><input dir="auto" style="position: relative; vertical-align: top; background-color: transparent;" spellcheck="false" autocomplete="off" class="search-input tt-input" name="query" placeholder="search..."><pre style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;Noto Sans&quot;,sans-serif; font-size: 17.9167px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: optimizelegibility; text-transform: none;" aria-hidden="true"></pre><span style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;" class="tt-dropdown-menu"><div class="tt-dataset-0"></div></span></span>
+</form>
+</div>
+<div class="main-navbar-user-nav">
+<span class="dropdown">
+<a data-toggle="dropdown" href="#">
+<span data-login="login">
+Login
+</span>
+<div class="user-profile-picture visible-sidebars" style="background-image: url( https://cdn.42.fr/userprofil/profilview/login.jpg)"></div>
+</a>
+<ul aria-labelledby="User menu" class="dropdown-menu" role="menu">
+<li>
+<a href="https://profile.intrav2.42.fr/slots"><span class="icon-calendar"></span>
+Manage slots
+</a></li>
+<li>
+<a href="https://profile.intrav2.42.fr/users/login"><span class="icon-user"></span>
+View my profile
+</a></li>
+<li class="visible-xs">
+<a data-method="delete" href="https://signin.intrav2.42.fr/logout" rel="nofollow"><span class="icon-power-off"></span>
+Logout
+</a></li>
+</ul>
+</span>
+<div class="user-actions hidden-xs">
+<a class="user-action labelable" data-notification-drop="" href="#"><span class="icon-envelope-o"></span>
+<span class="labeled">0</span>
+</a><a class="user-action labelable" data-method="delete" href="https://signin.intrav2.42.fr/logout" rel="nofollow"><span class="icon-power-off unlabeled"></span>
+</a></div>
+</div>
+</div>
+
+<div class="page">
+<div class="left-sidebar-fix with-main-menu"></div>
+<div class="page-sidebar left-main-container page-sidebar-fixed-left under-main-navbar"><ul class="main-left-navbar">
+<li>
+<a class="inactive" href="https://profile.intrav2.42.fr/">
+<span class="icon-scale-1"></span>
+<span class="visible-overlay">
+Profile
+</span>
+</a>
+</li>
+<li>
+<a class="active" href="https://projects.intrav2.42.fr/">
+<span class="icon-network-2-1"></span>
+<span class="visible-overlay">
+Projets
+</span>
+</a>
+</li>
+<li>
+<a class="inactive" href="https://elearning.intrav2.42.fr/">
+<span class="icon-movie-play-1"></span>
+<span class="visible-overlay">
+E-learning
+</span>
+</a>
+</li>
+<li>
+<a class="inactive" href="https://forum.intrav2.42.fr/">
+<span class="icon-bubble-conversation-5"></span>
+<span class="visible-overlay">
+Forum
+</span>
+</a>
+</li>
+<li>
+<a class="inactive" href="https://meta.intrav2.42.fr/">
+<span class="icon-compass-2"></span>
+<span class="visible-overlay">
+Meta
+</span>
+</a>
+</li>
+</ul><div class="app-sidebar-left">
+<div class="marked-title inverse">Go to</div>
+<div class="projects-menu-list">
+<a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/"><span class="icon-briefcase project-status-icon"></span>
+My projects
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects"><span class="icon-list-1 project-status-icon"></span>
+All projects
+</a></div>
+<div class="marked-title inverse">Your projects</div>
+<div class="projects-menu-list">
+<a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/libft"><span class="project-status-icon icon-check project-status-finished"></span>
+Libft
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/get_next_line"><span class="project-status-icon icon-check project-status-finished"></span>
+Get_Next_Line
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/ft_ls"><span class="project-status-icon icon-check project-status-finished"></span>
+ft_ls
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/fdf"><span class="project-status-icon icon-check project-status-finished"></span>
+FdF
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/ft_printf"><span class="project-status-icon icon-check project-status-finished"></span>
+ft_printf
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/ft_sh1"><span class="project-status-icon icon-check project-status-finished"></span>
+ft_sh1
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/exam-c"><span class="project-status-icon icon-check project-status-finished"></span>
+Exam C
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/fract-ol"><span class="project-status-icon icon-clock project-status-progress"></span>
+Fract'ol
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/piscine-php"><span class="project-status-icon icon-clock project-status-waiting"></span>
+Piscine PHP
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/rushes"><span class="project-status-icon project-status-no-idea"></span>
+Rushes
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/libftasm"><span class="project-status-icon icon-clock project-status-waiting"></span>
+LibftASM
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/computorv1"><span class="project-status-icon icon-check project-status-finished"></span>
+ComputorV1
+</a></div>
+</div></div>
+<div class="page-content">
+<div class="row">
+
+<div class="main-top-menu">
+
+</div>
+<div class="container-item">
+<h1 class="main-title primary">
+Scale for project
+
+<a href="https://projects.intrav2.42.fr/projects/lem-ipc">Lem-ipc</a>
+</h1>
+<h4 class="marked-title">Git repository</h4>
+<div class="container-inner-item project-repo">
+<div class="input-group">
+<input class="form-control" data-git-url="" disabled="disabled" value="**link**" type="text">
+<span class="input-group-addon" data-copy="[data-git-url]">
+<span class="icon-paste"></span>
+</span>
+</div>
+</div>
+<div class="scale-guidelines dancer from-down" id="guidelines-80">
+<h3>Guidelines</h3>
+<p>
+Vous connaissez maintenant le principe de la peer-evaluation.
+<br>Si ce n'est pas encore le cas, retrouvez les directives sur l'état
+<br>d'esprit du peer-correcting dans le document dédié sur l'e-learning.
+<br>
+<br>Vérifiez d'abord les éléments suivants :
+<br>
+<br>- Il y a bien un rendu (dans le dépôt git)
+<br>- Fichier auteur valide
+<br>- Le Makefile est présent et compile bien l'exécutable lemipc
+<br>- Pas de faute de norme, la Norminette faisant foi
+<br>- Pas de triche (fonctions non autorisées, les étudiants doivent
+<br>  pouvoir expliquer leur code, ...)
+<br>
+<br>Si un élément n'est pas conforme au sujet, la notation s'arrête
+<br>la. Vous êtes encouragés à continuer de débattre du projet, mais le
+<br>barème n'est pas appliqué.
+<br>
+</p>
+</div>
+</div>
+<div class="container-item dancer from-down hidden-xlg" id="ratings-80">
+<h2>Ratings</h2>
+<div class="on-grey">
+<p class="marked-title">Define the type of error (if there is an error), which ended the correction.</p>
+<div class="btn-group block" data-radio-item="flag-small">
+<label class="btn btn-default btn-success label_flag_ok on-active" for="scale_team_flag_ok" name="scale_team[flag]">
+<span class="icon-checkmark"></span>
+Ok
+</label>
+<label class="btn btn-danger btn-default label_flag_empty_work on-active" for="scale_team_flag_empty_work" name="scale_team[flag]">
+<span class="icon-question-circle"></span>
+Empty work
+</label>
+<label class="btn btn-danger btn-default label_flag_incomplete_work on-active" for="scale_team_flag_incomplete_work" name="scale_team[flag]">
+<span class="icon-exclamation-circle"></span>
+Incomplete work
+</label>
+<label class="btn btn-danger btn-default label_flag_no_author_file on-active" for="scale_team_flag_no_author_file" name="scale_team[flag]">
+<span class="icon-user"></span>
+No author file
+</label>
+<label class="btn btn-danger btn-default label_flag_invalid_compilation on-active" for="scale_team_flag_invalid_compilation" name="scale_team[flag]">
+<span class="icon-gears"></span>
+Invalid compilation
+</label>
+<label class="btn btn-danger btn-default label_flag_norme on-active" for="scale_team_flag_norme" name="scale_team[flag]">
+<span class="icon-book"></span>
+Norme
+</label>
+<label class="btn btn-danger btn-default label_flag_cheat on-active" for="scale_team_flag_cheat" name="scale_team[flag]">
+<span class="icon-times-circle"></span>
+Cheat
+</label>
+<label class="btn btn-danger btn-default label_flag_crash on-active" for="scale_team_flag_crash" name="scale_team[flag]">
+<span class="icon-fire2"></span>
+Crash
+</label>
+</div>
+</div>
+</div>
+<div class="container-item dancer from-down" id="attachments-80">
+<h2>Attachments</h2>
+<div class="project-attachments-list">
+</div>
+
+
+<div class="project-attachments-list">
+<div class="project-attachment-item">
+<h4 class="attachment-name">
+<span class="icon-file"></span>
+<a href="https://projects.intrav2.42.fr/uploads/document/document/87/lemipc.pdf" target="_blank">Sujet</a>
+</h4>
+</div>
+<div class="project-attachment-item">
+<h4 class="attachment-name">
+<span class="icon-file"></span>
+<a href="https://projects.intrav2.42.fr/uploads/document/document/88/faq.txt" target="_blank">FAQ</a>
+</h4>
+</div>
+</div>
+
+
+</div>
+<form accept-charset="UTF-8" action="/projects/lem-ipc/scales/80/scale_teams/47751" class="simple_form form-horizontal edit_scale_team" id="edit_scale_team_47751" method="post" novalidate="novalidate"><div style="display:none"><input name="utf8" value="✓" type="hidden"><input name="_method" value="patch" type="hidden"><input name="authenticity_token" value="vq10bMHopPuvgVpAVFIrss8LbptxlYLVewtb4YsojJc=" type="hidden"></div><div class="container-item scale-section-answers">
+<h2 class="main-title primary">Sections</h2>
+<div class="on-grey">
+<section class="scale-section-item dancer from-down" id="section-327">
+<h3 class="main-title">Les tests de fonctionnalité</h3>
+<p></p>
+<h4 class="scale-question-name">Binaire de jeu</h4>
+<p class="scale-section-guidelines">
+On a bien un unique binaire (hormis un eventuel afficheur de la
+<br>map) ?
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][0][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][0][question_id]" value="859" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][0][value]_true" name="[scale_team][answers_attributes][0][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][0][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][0][value]_false" name="[scale_team][answers_attributes][0][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][0][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Le plateau</h4>
+<p class="scale-section-guidelines">
+Le plateau est présent dès la première exécution ?
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][1][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][1][question_id]" value="860" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][1][value]_true" name="[scale_team][answers_attributes][1][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][1][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][1][value]_false" name="[scale_team][answers_attributes][1][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][1][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Multi-équipes</h4>
+<p class="scale-section-guidelines">
+On lance plusieurs fois le binaire : plusieurs équipes composées
+<br>de plusieurs joueurs sont bien présentes sur le plateau ?
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][2][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][2][question_id]" value="861" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][2][value]_true" name="[scale_team][answers_attributes][2][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][2][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][2][value]_false" name="[scale_team][answers_attributes][2][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][2][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Joueurs</h4>
+<p class="scale-section-guidelines">
+Les joueurs évoluent sur le plateau, ça bouge, il se passe
+<br>quelque chose ?
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][3][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][3][question_id]" value="862" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][3][value]_true" name="[scale_team][answers_attributes][3][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][3][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][3][value]_false" name="[scale_team][answers_attributes][3][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][3][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Mort des joueurs</h4>
+<p class="scale-section-guidelines">
+Des joueurs meurent quand ils sont entourés ?
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][4][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][4][question_id]" value="863" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][4][value]_true" name="[scale_team][answers_attributes][4][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][4][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][4][value]_false" name="[scale_team][answers_attributes][4][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][4][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Communication entre les joueurs</h4>
+<p class="scale-section-guidelines">
+Des infos sont échangées entre les processus des joueurs ?
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][5][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][5][question_id]" value="864" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][5][value]_true" name="[scale_team][answers_attributes][5][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][5][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][5][value]_false" name="[scale_team][answers_attributes][5][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][5][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Stratégie de recherche</h4>
+<p class="scale-section-guidelines">
+Une stratégie de recherche d'un adversaire est présente ?
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][6][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][6][question_id]" value="865" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][6][value]_true" name="[scale_team][answers_attributes][6][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][6][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][6][value]_false" name="[scale_team][answers_attributes][6][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][6][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Afficheur de map</h4>
+<p class="scale-section-guidelines">
+On a un afficheur pour la map ?
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][7][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][7][question_id]" value="866" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][7][value]_true" name="[scale_team][answers_attributes][7][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][7][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][7][value]_false" name="[scale_team][answers_attributes][7][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][7][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+</section>
+<section class="scale-section-item dancer from-down" id="section-328">
+<h3 class="main-title">L implémentation</h3>
+<p></p>
+<h4 class="scale-question-name">Création SHM</h4>
+<p class="scale-section-guidelines">
+Le segment de mémoire partagé est bien crée ?
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][8][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][8][question_id]" value="867" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][8][value]_true" name="[scale_team][answers_attributes][8][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][8][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][8][value]_false" name="[scale_team][answers_attributes][8][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][8][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Usage SHM</h4>
+<p class="scale-section-guidelines">
+Le segment de mémoire partagé est bien utilisé ?
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][9][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][9][question_id]" value="868" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][9][value]_true" name="[scale_team][answers_attributes][9][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][9][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][9][value]_false" name="[scale_team][answers_attributes][9][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][9][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Création somophores</h4>
+<p class="scale-section-guidelines">
+Des somophores sont bien créés pour gérer les accès
+<br>concurrentiels aux ressources partagées ?
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][10][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][10][question_id]" value="869" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][10][value]_true" name="[scale_team][answers_attributes][10][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][10][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][10][value]_false" name="[scale_team][answers_attributes][10][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][10][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Usage somophores</h4>
+<p class="scale-section-guidelines">
+Les somophores sont correctement utilisés ?
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][11][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][11][question_id]" value="870" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][11][value]_true" name="[scale_team][answers_attributes][11][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][11][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][11][value]_false" name="[scale_team][answers_attributes][11][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][11][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Création MSGQ</h4>
+<p class="scale-section-guidelines">
+Les messages queue sont correctement créées ?
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][12][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][12][question_id]" value="871" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][12][value]_true" name="[scale_team][answers_attributes][12][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][12][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][12][value]_false" name="[scale_team][answers_attributes][12][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][12][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Usage MSGQ</h4>
+<p class="scale-section-guidelines">
+Les messages queue sont correctement utilisées ?
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][13][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][13][question_id]" value="872" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][13][value]_true" name="[scale_team][answers_attributes][13][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][13][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][13][value]_false" name="[scale_team][answers_attributes][13][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][13][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Destruction des IPCs en fin de partie</h4>
+<p class="scale-section-guidelines">
+L'ensemble des IPC sont bien libérés à la fin par le dernier
+<br>process à quitter (hors processus graphique qui doit pas vautrer
+<br>si il n'y a plus la map) ?
+<br>
+<br>Par fin "normale" on entend ce que vous avez choisi pour que le
+<br>jeu s'arrête : par exemple lorsqu'il n'y a plus qu'un seul
+<br>joueur sur le plateau.
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][14][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][14][question_id]" value="873" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][14][value]_true" name="[scale_team][answers_attributes][14][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][14][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][14][value]_false" name="[scale_team][answers_attributes][14][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][14][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Destruction des IPCs en cas d arrêt prématuré</h4>
+<p class="scale-section-guidelines">
+L'ensemble des IPC sont bien libérés quand on fait un ctrl+C ?
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][15][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][15][question_id]" value="874" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][15][value]_true" name="[scale_team][answers_attributes][15][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][15][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][15][value]_false" name="[scale_team][answers_attributes][15][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][15][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+</section>
+<section class="scale-section-item dancer from-down" id="section-329">
+<h3 class="main-title">Bonus</h3>
+<p></p>
+<h4 class="scale-question-name">Bonus graphique</h4>
+<p class="scale-section-guidelines">
+L'interface graphique est plutôt jolie/sympa/pratique... ?
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][16][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][16][question_id]" value="875" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][16][value]_true" name="[scale_team][answers_attributes][16][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][16][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][16][value]_false" name="[scale_team][answers_attributes][16][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][16][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">D autres bonus</h4>
+<p class="scale-section-guidelines">
+Comptez dans cette partie les fonctionnalités bonus
+<br>distinctes. Vous pouvez noter jusqu'à 5 bonus disctincts.
+<br>
+<br>Chaque bonus doit être :
+<br>- Un minimum utile (à votre discrétion)
+<br>- Bien réalisé et 100% fonctionnel
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][17][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][17][question_id]" value="876" type="hidden"></div></div>
+<div class="marked-title text-center">Rate it from 0 (failed) through 5 (excellent)</div>
+<input autocomplete="off" class="star-range" data-star-range="" max="5" name="[scale_team][answers_attributes][17][value]" step="1" value="0" type="range">
+</div>
+</section>
+</div>
+</div>
+<div class="container-item">
+<h2 class="main-title primary">Conclusion</h2>
+<div class="on-grey">
+<div class="scale-final-evaluation hidden">
+<div class="form-group radio_buttons optional scale_team_flag"><label class="radio_buttons optional col-sm-2 control-label">Flag</label><div class="col-sm-10"><span class="radio"><label for="scale_team_flag_ok" name="scale_team[flag]"><input checked="checked" class="radio_buttons optional" id="scale_team_flag_ok" name="scale_team[flag]" value="ok" type="radio">Ok</label></span><span class="radio"><label for="scale_team_flag_empty_work" name="scale_team[flag]"><input class="radio_buttons optional" id="scale_team_flag_empty_work" name="scale_team[flag]" value="empty_work" type="radio">Empty Work</label></span><span class="radio"><label for="scale_team_flag_incomplete_work" name="scale_team[flag]"><input class="radio_buttons optional" id="scale_team_flag_incomplete_work" name="scale_team[flag]" value="incomplete_work" type="radio">Incomplete Work</label></span><span class="radio"><label for="scale_team_flag_no_author_file" name="scale_team[flag]"><input class="radio_buttons optional" id="scale_team_flag_no_author_file" name="scale_team[flag]" value="no_author_file" type="radio">No Author File</label></span><span class="radio"><label for="scale_team_flag_invalid_compilation" name="scale_team[flag]"><input class="radio_buttons optional" id="scale_team_flag_invalid_compilation" name="scale_team[flag]" value="invalid_compilation" type="radio">Invalid Compilation</label></span><span class="radio"><label for="scale_team_flag_norme" name="scale_team[flag]"><input class="radio_buttons optional" id="scale_team_flag_norme" name="scale_team[flag]" value="norme" type="radio">Norme</label></span><span class="radio"><label for="scale_team_flag_cheat" name="scale_team[flag]"><input class="radio_buttons optional" id="scale_team_flag_cheat" name="scale_team[flag]" value="cheat" type="radio">Cheat</label></span><span class="radio"><label for="scale_team_flag_crash" name="scale_team[flag]"><input class="radio_buttons optional" id="scale_team_flag_crash" name="scale_team[flag]" value="crash" type="radio">Crash</label></span></div></div>
+</div>
+<div class="scale-final-comments" id="comments-80">
+<p class="marked-title">Leave a comment on this correction</p>
+<div class="form-group text required scale_team_comment"><label class="text required col-sm-2 control-label" for="scale_team_comment"><abbr title="required">*</abbr> Comment</label><div class="col-sm-10"><textarea class="text required form-control" id="scale_team_comment" name="scale_team[comment]"></textarea></div></div>
+</div>
+<div class="scale-final-submit">
+<input class="btn btn-primary btn-block" data-disable-with="Finishing correction..." name="commit" value="Finish correction" type="submit">
+</div>
+</div>
+</div>
+</form>
+
+
+
+
+</div>
+</div>
+<div class="page-sidebar right-main-container page-sidebar-fixed-right under-main-navbar">
+<div class="app-sidebar-right" id="navbar-scale">
+<ul class="nav" role="tablist">
+<li class="dancer from-down" data-radio-item="flag">
+<h4 class="marked-title">Ratings</h4>
+<label class="active block-item label_flag_ok unpadded" for="scale_team_flag_ok" name="scale_team[flag]">
+<span class="icon-checkmark"></span>
+Ok
+</label>
+<label class="block-item label_flag_empty_work unpadded" for="scale_team_flag_empty_work" name="scale_team[flag]">
+<span class="icon-question-circle"></span>
+Empty work
+</label>
+<label class="block-item label_flag_incomplete_work unpadded" for="scale_team_flag_incomplete_work" name="scale_team[flag]">
+<span class="icon-exclamation-circle"></span>
+Incomplete work
+</label>
+<label class="block-item label_flag_no_author_file unpadded" for="scale_team_flag_no_author_file" name="scale_team[flag]">
+<span class="icon-user"></span>
+No author file
+</label>
+<label class="block-item label_flag_invalid_compilation unpadded" for="scale_team_flag_invalid_compilation" name="scale_team[flag]">
+<span class="icon-gears"></span>
+Invalid compilation
+</label>
+<label class="block-item label_flag_norme unpadded" for="scale_team_flag_norme" name="scale_team[flag]">
+<span class="icon-book"></span>
+Norme
+</label>
+<label class="block-item label_flag_cheat unpadded" for="scale_team_flag_cheat" name="scale_team[flag]">
+<span class="icon-times-circle"></span>
+Cheat
+</label>
+<label class="block-item label_flag_crash unpadded" for="scale_team_flag_crash" name="scale_team[flag]">
+<span class="icon-fire2"></span>
+Crash
+</label>
+</li>
+<li class="dancer from-down">
+<h4 class="marked-title">Presentation</h4>
+</li>
+<li class="dancer from-down">
+
+</li>
+<li class="dancer from-down">
+
+</li>
+<li class="dancer from-down">
+
+</li>
+<li class="dancer from-down active">
+<a href="#guidelines-80">Guidelines</a>
+</li>
+<li class="dancer from-down">
+
+</li>
+<li class="dancer from-down">
+<h4 class="marked-title">Sections</h4>
+</li>
+<li class="dancer from-down">
+<a href="#section-327">Les tests de fonctionnalité</a>
+</li>
+<li class="dancer from-down">
+<a href="#section-328">L implémentation</a>
+</li>
+<li class="dancer from-down">
+<a href="#section-329">Bonus</a>
+</li>
+<li class="dancer from-down">
+<h4 class="marked-title">Conclusion</h4>
+</li>
+<li class="dancer from-down">
+<a href="#comments-80">Comment</a>
+</li>
+</ul>
+</div>
+
+
+</div>
+<div class="right-sidebar-fix"></div>
+</div>
+<div aria-hidden="true" aria-labelledby="bugModalLabel" class="modal fade" id="smartModal" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-hidden="true" class="close" data-dismiss="modal" type="button">
+x
+</button>
+<h3 id="bugModalLabel">
+A bug ?
+</h3>
+</div>
+<div class="modal-body">
+<h4 class="note-title">Please wait...</h4>
+</div>
+<div class="modal-footer">
+<button aria-hidden="true" class="btn" data-dismiss="modal">Cancel</button>
+<button class="send btn btn-primary">Send</button>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', "UA-55986469-3", 'auto');
+  
+  ga('send', 'pageview');
+</script>
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-56406133-1']);
+  _gaq.push(['_setDomainName', 'intrav2.42.fr']);
+  _gaq.push(['_trackPageview']);
+</script>
+
+<div class="hide" data-cache="true"></div>
+<footer></footer>
+
+
+
+
+</body></html>

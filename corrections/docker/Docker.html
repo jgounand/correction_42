@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Intranet 42</title>
+<meta content="authenticity_token" name="csrf-param">
+<meta content="/KMUzBj4dKMnMAS/tfN5N5I7g1EoR6EgEBmpjC0NVkA=" name="csrf-token">
+<meta charset="utf-8">
+<meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" name="viewport">
+<meta content="yes" name="mobile-web-app-capable">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="translucent-black" name="apple-mobile-web-app-status-bar-style">
+<meta content="Intranet 42" name="apple-mobile-web-app-title">
+<meta content="on" http-equiv="cleartype">
+<link href="https://projects.intrav2.42.fr/assets/42_logo_black-0dcc25d1cdb873c2857bc80734364451.png" rel="icon" type="image/svg">
+<link href="https://projects.intrav2.42.fr/assets/42_logo_black-0dcc25d1cdb873c2857bc80734364451.png" rel="shortcut icon" type="image/svg">
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"></script>
+<![endif]-->
+<link href="Docker_files/application-ef1d2f6591b4a0f5712a44f98f449a61.css" media="all" rel="stylesheet">
+<script src="Docker_files/analytics.js" async=""></script><script src="Docker_files/require-bda0ed7529a31c9f1b6d46ba76289e1b.js"></script><script>require.config({"baseUrl":"/assets","packages":["vendor","common","common/media","common/add_on","common/callback","common/modal","common/simple_form","common/typeahead","project","galaxy","galaxy/profile","galaxy/infoBox","galaxy/galaxy","animMaster"],"paths":{"common/main":"/assets/common/main-25967bdbf19d9450356fcc7feeaf2d07","vendor/main":"/assets/vendor/main-ab7b6a96b22ff77af79ec6ea4c20391a","application":"/assets/application-73dba619f83f174fa7f52f606d965c15"},"shim":{"scrollspy":{"deps":["jquery"]},"vendor/video-dev":{"deps":["jquery"]},"vendor/video-markers":{"deps":["vendor/video-dev"]},"vendor/video-resolutions":{"deps":["vendor/video-dev"]},"datetimepicker":{"deps":["jquery","moment"]},"rangeslider":{"deps":["jquery"]},"fullcalendar":{"deps":["jquery","moment"]},"jquery_nested_form":{"deps":["jquery"]},"highcharts-release":{"deps":["jquery"],"exports":"Highcharts"},"jquery-textcomplete":{"deps":["jquery"]},"chosen-jquery":{"deps":["jquery"]},"maxlength":{"deps":["jquery"]},"moment-twitter":{"deps":["moment"]},"jquery-ujs":{"deps":["jquery"]},"onScreen":{"deps":["jquery"]},"typeahead":{"deps":["jquery"]},"bloodhound":{"deps":["jquery"]},"bootstrap":{"deps":["jquery"]},"easel":{"exports":"createjs"},"tween":{"deps":["easel"],"exports":"Tween"},"stats":{"deps":["jquery"],"exports":"Stats"}}}); require(["application"]);</script>
+<script src="Docker_files/application-73dba619f83f174fa7f52f606d965c15.js" data-requiremodule="application" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Docker_files/main-ab7b6a96b22ff77af79ec6ea4c20391a.js" data-requiremodule="vendor/main" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script><script src="Docker_files/main-25967bdbf19d9450356fcc7feeaf2d07.js" data-requiremodule="common/main" data-requirecontext="_" async="" charset="utf-8" type="text/javascript"></script></head><body data-id="11184" data-url="//websocket.intrav2.42.fr/">
+<div class="main-navbar">
+<div class="main-navbar-left">
+<div class="main-navbar-logo">
+<a href="https://profile.intrav2.42.fr/"><img alt="42 logo" src="Docker_files/42_logo-0e3c2f415e527aa6703482c3b9a4a7bd.svg">
+</a></div>
+<span class="hidden-sidebars main-menu-trigger lines-button x" data-trigger-menu="">
+<span class="lines"></span>
+</span>
+<form action="https://profile.intrav2.42.fr/searches/search" class="main-navbar-search hidden-xs" data-user-url="https://profile.intrav2.42.fr/users/" method="get">
+<input class="search-input" name="query" placeholder="search...">
+</form>
+</div>
+<div class="main-navbar-user-nav">
+<span class="dropdown">
+<a data-toggle="dropdown" href="#">
+<span data-login="login">
+Login
+</span>
+<div class="user-profile-picture visible-sidebars" style="background-image: url( https://cdn.42.fr/userprofil/profilview/login.jpg)"></div>
+</a>
+<ul aria-labelledby="User menu" class="dropdown-menu" role="menu">
+<li>
+<a href="https://profile.intrav2.42.fr/slots"><span class="icon-calendar"></span>
+Manage slots
+</a></li>
+<li>
+<a href="https://profile.intrav2.42.fr/users/login"><span class="icon-user"></span>
+View my profile
+</a></li>
+<li class="visible-xs">
+<a data-method="delete" href="https://signin.intrav2.42.fr/logout" rel="nofollow"><span class="icon-power-off"></span>
+Logout
+</a></li>
+</ul>
+</span>
+<div class="user-actions hidden-xs">
+<a class="user-action labelable" data-notification-drop="" href="#"><span class="icon-envelope-o"></span>
+<span class="labeled">0</span>
+</a><a class="user-action labelable" data-method="delete" href="https://signin.intrav2.42.fr/logout" rel="nofollow"><span class="icon-power-off unlabeled"></span>
+</a></div>
+</div>
+</div>
+
+<div class="page">
+<div class="left-sidebar-fix with-main-menu"></div>
+<div class="page-sidebar left-main-container page-sidebar-fixed-left under-main-navbar"><ul class="main-left-navbar">
+<li>
+<a class="inactive" href="https://profile.intrav2.42.fr/">
+<span class="icon-scale-1"></span>
+<span class="visible-overlay">
+Profile
+</span>
+</a>
+</li>
+<li>
+<a class="active" href="https://projects.intrav2.42.fr/">
+<span class="icon-network-2-1"></span>
+<span class="visible-overlay">
+Projets
+</span>
+</a>
+</li>
+<li>
+<a class="inactive" href="https://elearning.intrav2.42.fr/">
+<span class="icon-movie-play-1"></span>
+<span class="visible-overlay">
+E-learning
+</span>
+</a>
+</li>
+<li>
+<a class="inactive" href="https://forum.intrav2.42.fr/">
+<span class="icon-bubble-conversation-5"></span>
+<span class="visible-overlay">
+Forum
+</span>
+</a>
+</li>
+<li>
+<a class="inactive" href="https://meta.intrav2.42.fr/">
+<span class="icon-compass-2"></span>
+<span class="visible-overlay">
+Meta
+</span>
+</a>
+</li>
+</ul><div class="app-sidebar-left">
+<div class="marked-title inverse">Go to</div>
+<div class="projects-menu-list">
+<a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/"><span class="icon-briefcase project-status-icon"></span>
+My projects
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects"><span class="icon-list-1 project-status-icon"></span>
+All projects
+</a></div>
+<div class="marked-title inverse">Your projects</div>
+<div class="projects-menu-list">
+<a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/libft"><span class="project-status-icon icon-check project-status-finished"></span>
+Libft
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/get_next_line"><span class="project-status-icon icon-check project-status-finished"></span>
+Get_Next_Line
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/ft_ls"><span class="project-status-icon icon-check project-status-finished"></span>
+ft_ls
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/fdf"><span class="project-status-icon icon-check project-status-finished"></span>
+FdF
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/ft_printf"><span class="project-status-icon icon-check project-status-finished"></span>
+ft_printf
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/ft_sh1"><span class="project-status-icon icon-check project-status-finished"></span>
+ft_sh1
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/exam-c"><span class="project-status-icon icon-clock project-status-progress"></span>
+Exam C
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/fract-ol"><span class="project-status-icon icon-clock project-status-progress"></span>
+Fract'ol
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/piscine-php"><span class="project-status-icon icon-clock project-status-waiting"></span>
+Piscine PHP
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/rushes"><span class="project-status-icon project-status-no-idea"></span>
+Rushes
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/libftasm"><span class="project-status-icon icon-clock project-status-progress"></span>
+LibftASM
+</a><a class="project-item sidebar-item" href="https://projects.intrav2.42.fr/projects/computorv1"><span class="project-status-icon icon-check project-status-finished"></span>
+ComputorV1
+</a></div>
+</div></div>
+<div class="page-content">
+<div class="row">
+
+<div class="main-top-menu">
+
+</div>
+<div class="container-item">
+<h1 class="main-title primary">
+Scale for project
+
+<a href="https://projects.intrav2.42.fr/projects/docker">Docker</a>
+</h1>
+<h4 class="marked-title">Git repository</h4>
+<div class="container-inner-item project-repo">
+<div class="input-group">
+<input class="form-control" data-git-url="" disabled="disabled" value="**link**" type="text">
+<span class="input-group-addon" data-copy="[data-git-url]">
+<span class="icon-paste"></span>
+</span>
+</div>
+</div>
+<div class="scale-introduction dancer from-down" id="introduction-87">
+<h3>Introduction</h3>
+<p>
+
+<br>Nous vous demandons, pour le bon déroulement de cette notation :
+<br>
+<br>- De rester courtois, poli, respectueux, constructif lors de cet
+<br>  échange. Le lien de confiance entre la communauté 42 et vous en
+<br>  dépend.
+<br>- De bien mettre en évidence auprès de la personne notée (ou du
+<br>  groupe) les dysfonctionnements éventuels.
+<br>- D'accepter qu'il puisse y avoir parfois des différences
+<br>  d’interprétation sur les demandes du sujet ou l’étendue des
+<br>  fonctionnalités. Restez ouvert d'esprit face a la vision de
+<br>  l'autre (a-t-il raison ou tort ?), et notez le plus honnêtement
+<br>  possible.
+<br>
+<br>Bonne soutenance à tous !
+<br>
+</p>
+</div>
+<div class="scale-guidelines dancer from-down" id="guidelines-87">
+<h3>Guidelines</h3>
+<p>
+RAPPELEZ VOUS QUE VOUS NE DEVEZ CORRIGER QUE CE QUI SE TROUVE SUR LE DÉPÔT DE RENDU DE L'ÉTUDIANT.
+<br>
+<br>Il s'agit de faire un "git clone" du dépôt de rendu, et de corriger ce qui s'y trouve.
+<br>
+<br>Si le correcteur n'a pas encore fait ce projet, il est obligatoire
+<br>de lire le sujet en entier avant de commencer cette soutenance.|
+<br>
+</p>
+</div>
+</div>
+<div class="container-item dancer from-down hidden-xlg" id="ratings-87">
+<h2>Ratings</h2>
+<div class="on-grey">
+<p class="marked-title">Define the type of error (if there is an error), which ended the correction.</p>
+<div class="btn-group block" data-radio-item="flag-small">
+<label class="btn btn-default btn-success label_flag_ok on-active" for="scale_team_flag_ok" name="scale_team[flag]">
+<span class="icon-checkmark"></span>
+Ok
+</label>
+<label class="btn btn-danger btn-default label_flag_empty_work on-active" for="scale_team_flag_empty_work" name="scale_team[flag]">
+<span class="icon-question-circle"></span>
+Empty work
+</label>
+<label class="btn btn-danger btn-default label_flag_incomplete_work on-active" for="scale_team_flag_incomplete_work" name="scale_team[flag]">
+<span class="icon-exclamation-circle"></span>
+Incomplete work
+</label>
+<label class="btn btn-danger btn-default label_flag_no_author_file on-active" for="scale_team_flag_no_author_file" name="scale_team[flag]">
+<span class="icon-user"></span>
+No author file
+</label>
+<label class="btn btn-danger btn-default label_flag_invalid_compilation on-active" for="scale_team_flag_invalid_compilation" name="scale_team[flag]">
+<span class="icon-gears"></span>
+Invalid compilation
+</label>
+<label class="btn btn-danger btn-default label_flag_norme on-active" for="scale_team_flag_norme" name="scale_team[flag]">
+<span class="icon-book"></span>
+Norme
+</label>
+<label class="btn btn-danger btn-default label_flag_cheat on-active" for="scale_team_flag_cheat" name="scale_team[flag]">
+<span class="icon-times-circle"></span>
+Cheat
+</label>
+<label class="btn btn-danger btn-default label_flag_crash on-active" for="scale_team_flag_crash" name="scale_team[flag]">
+<span class="icon-fire2"></span>
+Crash
+</label>
+</div>
+</div>
+</div>
+<div class="container-item dancer from-down" id="attachments-87">
+<h2>Attachments</h2>
+<div class="project-attachments-list">
+</div>
+
+
+<div class="project-attachments-list">
+<div class="project-attachment-item">
+<h4 class="attachment-name">
+<span class="icon-file"></span>
+<a href="https://projects.intrav2.42.fr/uploads/document/document/106/docker.fr.pdf" target="_blank">Subject</a>
+</h4>
+</div>
+<div class="project-attachment-item">
+<h4 class="attachment-name">
+<span class="icon-link-2"></span>
+<a href="https://elearning.intrav2.42.fr/notions/78/subnotions/279/locale_resources/277/videos/222" target="_blank">Intra - Elearning - Docker</a>
+</h4>
+</div>
+</div>
+
+
+</div>
+<form accept-charset="UTF-8" action="/projects/docker/scales/87/scale_teams/40831" class="simple_form form-horizontal edit_scale_team" id="edit_scale_team_40831" method="post" novalidate="novalidate"><div style="display:none"><input name="utf8" value="✓" type="hidden"><input name="_method" value="patch" type="hidden"><input name="authenticity_token" value="/KMUzBj4dKMnMAS/tfN5N5I7g1EoR6EgEBmpjC0NVkA=" type="hidden"></div><div class="container-item scale-section-answers">
+<h2 class="main-title primary">Sections</h2>
+<div class="on-grey">
+<section class="scale-section-item dancer from-down" id="section-356">
+<h3 class="main-title">Préliminaires</h3>
+<p></p>
+<h4 class="scale-question-name">Consignes préliminaires</h4>
+<p class="scale-section-guidelines">
+
+<br>Vérifiez d'abord les éléments suivants :
+<br>
+<br>- Il y a bien un rendu (dans le dépôt git), seule la mission 02 nécessite un rendu obligatoire.
+<br>
+<br>- Pas de triche, l'étudiant doit pouvoir expliquer son code.
+<br>
+<br>- Toute la correction se déroule en local, les images, containers et autres seront hébergés
+<br>sur la machine en local. S'il y a une seule mission d'effectuée sur une machine à distance,
+<br>la correction s'arrête. Rendu invalide.
+<br>
+<br>- Tout les build d'images commence a partir d'une image officielle Linux disponible sur docker Hub
+<br>FROM: ubuntu:14.04 (Dockerfile) par exemple (non pas un variante qui est déjà pré-construite)
+<br>
+<br>Si un élément de cette liste n'est pas respecté, la notation
+<br>s'arrête là. Utilisez le flag approprié. Vous êtes encouragés à
+<br>continuer de débattre du projet, mais le barème n'est pas
+<br>appliqué.
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][0][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][0][question_id]" value="959" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][0][value]_true" name="[scale_team][answers_attributes][0][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][0][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][0][value]_false" name="[scale_team][answers_attributes][0][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][0][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+</section>
+<section class="scale-section-item dancer from-down" id="section-357">
+<h3 class="main-title">Mission 00</h3>
+<p>Installer Docker sur Mac</p>
+<h4 class="scale-question-name">Docker fonctionne-t-il ?</h4>
+<p class="scale-section-guidelines">
+
+<br>La commande “docker” doit vous retourner une liste de commandes
+<br>pour utiliser Docker, cela veut dire que Docker est bien installé.
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][1][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][1][question_id]" value="960" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][1][value]_true" name="[scale_team][answers_attributes][1][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][1][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][1][value]_false" name="[scale_team][answers_attributes][1][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][1][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Docker est-il installé grâce à l’utilisation de boot2docker ?</h4>
+<p class="scale-section-guidelines">
+
+<br>Ce serait vraiment dommage d’avoir utilisé une VM pour cela, Docker perd tout son interêt.
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][2][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][2][question_id]" value="961" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][2][value]_true" name="[scale_team][answers_attributes][2][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][2][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][2][value]_false" name="[scale_team][answers_attributes][2][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][2][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+</section>
+<section class="scale-section-item dancer from-down" id="section-358">
+<h3 class="main-title">Mission 01</h3>
+<p>”Hello Wolrd”</p>
+<h4 class="scale-question-name">Affichage de “Hello World” dans un navigateur, à l’adresse d’un container Docker</h4>
+<p class="scale-section-guidelines">
+
+<br>Attention, en tant que correcteur vous devez être sûr que l’affichage
+<br>de la page n’est pas généré par un processus physique du Mac, le corrigé
+<br>doit vous prouver qu’il y a bien un serveur web dans un container Docker
+<br>qui affiche la page.
+<br>
+<br>Pour rechercher le port du serveur web, vous devez taper dans la console
+<br>de la machine physique (pas dans un container)
+<br>“docker ps”
+<br>En sortie à la colonne PORTS, vous aurez plusieurs redirections de port. Par
+<br>défaut le port web interne du container est le port 80, il est possible que
+<br>le corrigé ait mis sa page web sur un autre port.
+<br>
+<br>Cherchez la flèche qui correspond 0.0.0.0:xxxxx-&gt;yy ex
+<br>  0.0.0.0:49168-&gt;80/tcp
+<br>
+<br>Pour l’IP vous devrez taper dans une console du Mac (pas dans un container)
+<br>--]  “boot2docker ip”
+<br>En sortie le shell vous retourne l’IP d’où est accessible le container ex
+<br>--]  192.168.59.103
+<br>
+<br>Au final pour accéder au hellowolrd vous aurez donc dans cet exemple
+<br>--]  192.168.59.103:49168
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][3][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][3][question_id]" value="962" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][3][value]_true" name="[scale_team][answers_attributes][3][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][3][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][3][value]_false" name="[scale_team][answers_attributes][3][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][3][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">A utilisé une option spécifique lors du “docker build” pour le nom de l’image</h4>
+<p class="scale-section-guidelines">
+--tag="" par exemple
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][4][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][4][question_id]" value="963" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][4][value]_true" name="[scale_team][answers_attributes][4][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][4][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][4][value]_false" name="[scale_team][answers_attributes][4][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][4][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Dans le container en mode interactif “-i -t”, le prompt affiche “login@42born2code”</h4>
+<p class="scale-section-guidelines">
+S’il a fait une manipulation dans le container pour arriver au même
+<br>résultat, ça veut dire qu’il s’est comliqué la vie pour le faire, donc faites lui
+<br>comprendre que c’est un noob.
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][5][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][5][question_id]" value="964" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][5][value]_true" name="[scale_team][answers_attributes][5][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][5][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][5][value]_false" name="[scale_team][answers_attributes][5][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][5][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">A utilisé une option spécifique lors du “docker run” du container</h4>
+<p class="scale-section-guidelines">
+
+<br>S’il a fait une manipulation dans le container pour arriver au même résultat:
+<br>ça veut dire qu’il s’est pris la tête pour le faire, donc faites lui comprendre
+<br>que c’est un noob.
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][6][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][6][question_id]" value="965" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][6][value]_true" name="[scale_team][answers_attributes][6][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][6][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][6][value]_false" name="[scale_team][answers_attributes][6][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][6][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+</section>
+<section class="scale-section-item dancer from-down" id="section-359">
+<h3 class="main-title">Mission 02</h3>
+<p>SSH Localhost</p>
+<h4 class="scale-question-name">Build du Dockerfile réussi</h4>
+<p class="scale-section-guidelines">
+
+<br>Comme expliqué dans le sujet, il est interdit de SSH une machine distante,
+<br>la soutenance se fait sur des containers en local, vérifiez que la commande
+<br>de connexion ssh est bien effectuée sur l’IP de “boot2docker ip”.
+<br>
+<br>Dans le dépôt il doit être présent un répertoire mission02, à l’intérieur
+<br>il y a au minimum un fichier nommé “Dockerfile”. Il y en aura d’autres,
+<br>le corrigé vous expliquera à quoi ils servent.
+<br>
+<br>Construire l’image à partir du Dockerfile, faites-vous aider par le corrigé.
+<br>À la fin du build le shell vous retournera
+<br>--]  “Successfully built [idImage]”
+<br>ce qui confirmera que la construction de l’image a réussi.
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][7][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][7][question_id]" value="966" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][7][value]_true" name="[scale_team][answers_attributes][7][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][7][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][7][value]_false" name="[scale_team][answers_attributes][7][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][7][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Connexion SSH réussie</h4>
+<p class="scale-section-guidelines">
+
+<br>Lancer l’image générée précédemment (idImage) en mode daemon
+<br>--]  “docker run -d…” aidez-vous du corrigé
+<br>
+<br>Comme pour la mission01, récupérez le port de redirection qui est lié au
+<br>port 42 interne au container (“docker ps”) ex:
+<br>--]  0.0.0.0:49159-&gt;42
+<br>
+<br>Connectez-vous en SSH sur le container
+<br>--]  “ssh login@IPContainer -p port” ou “ssh root@IPContainer -p port”
+<br>
+<br>Le shell pourrait vous demander si vous acceptez la connexion sur la dite IP, “yes”
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][8][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][8][question_id]" value="967" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][8][value]_true" name="[scale_team][answers_attributes][8][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][8][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][8][value]_false" name="[scale_team][answers_attributes][8][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][8][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Connexion SSH réussie sur le port 42 interne du container</h4>
+<p class="scale-section-guidelines">
+Dans la configuration du serveur SSH, le port configuré est le port 42
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][9][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][9][question_id]" value="968" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][9][value]_true" name="[scale_team][answers_attributes][9][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][9][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][9][value]_false" name="[scale_team][answers_attributes][9][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][9][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+</section>
+<section class="scale-section-item dancer from-down" id="section-360">
+<h3 class="main-title">Mission 03</h3>
+<p>Montage Volumes</p>
+<h4 class="scale-question-name">Montage répertoire en Volume dans un container</h4>
+<p class="scale-section-guidelines">
+
+<br>Il y a plusieurs méthodes pour monter des répertoires (sur la machine physique)
+<br>en volume dans un container, mais elles ont toutes un point commun : au lancement
+<br>du container, l’option
+<br>--]  “-v répertoirePhysique:répertoireContainer”
+<br>doit être renseignée au moins une fois lors de la commande docker run.
+<br>De la même manière, il n’est pas demandé de faire un montage volume de cette sorte
+<br>--]  “--volume”
+<br>
+<br>Le corrigé vous expliquera comment il a fait.
+<br>
+<br>Pour tester le partage, il suffira de faire un
+<br>--]  “touch filetest”
+<br>dans le répertoire partagé et de faire un “ls” de l’autre côté. testez réciproquement
+<br>la manipulation pour être sûr que le partage fonctionne bien dans les deux sens.
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][10][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][10][question_id]" value="969" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" id="radio_[scale_team][answers_attributes][10][value]_true" name="[scale_team][answers_attributes][10][value]" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][10][value]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" checked="checked" class="checkbox-input" id="radio_[scale_team][answers_attributes][10][value]_false" name="[scale_team][answers_attributes][10][value]" value="0" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][10][value]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+</section>
+<section class="scale-section-item dancer from-down" id="section-361">
+<h3 class="main-title">Bonus</h3>
+<p></p>
+<h4 class="scale-question-name">Premier bonus</h4>
+<p class="scale-section-guidelines">
+
+<br>Pour le rendu des bonus d’environnement complet : Chaque bonus sera nommé bonus01,
+<br>bonus02 . . . . bonus[xx].
+<br>
+<br>Pour des bonus de Dockerfile s’il y a, le dossier bonus ne doit pas dépasser 500Ko
+<br>--]  "du -hs bonus[x]" pour voir la taille du dossier complet
+<br>Pour chaque Dockerfile bonus le corrigé doit vous en expliquer l’utilité et le
+<br>gain de temps qui en découle.
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_id" name="[scale_team][answers_attributes][11][id]" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="hidden form-control" id="scale_team_answer_question_id" name="[scale_team][answers_attributes][11][question_id]" value="970" type="hidden"></div></div>
+<div class="marked-title text-center">Rate it from 0 (failed) through 5 (excellent)</div>
+<input style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;" autocomplete="off" class="star-range slided" data-star-range="" max="5" name="[scale_team][answers_attributes][11][value]" step="1" value="0" type="range"><div class="rangeslider" id="js-rangeslider-0"><div style="width: 20px;" class="rangeslider__fill"></div><div style="left: 0px;" class="rangeslider__handle"></div></div>
+</div>
+</section>
+</div>
+</div>
+<div class="container-item">
+<h2 class="main-title primary">Conclusion</h2>
+<div class="on-grey">
+<div class="scale-final-evaluation hidden">
+<div class="form-group radio_buttons optional scale_team_flag"><label class="radio_buttons optional col-sm-2 control-label">Flag</label><div class="col-sm-10"><span class="radio"><label for="scale_team_flag_ok" name="scale_team[flag]"><input checked="checked" class="radio_buttons optional" id="scale_team_flag_ok" name="scale_team[flag]" value="ok" type="radio">Ok</label></span><span class="radio"><label for="scale_team_flag_empty_work" name="scale_team[flag]"><input class="radio_buttons optional" id="scale_team_flag_empty_work" name="scale_team[flag]" value="empty_work" type="radio">Empty Work</label></span><span class="radio"><label for="scale_team_flag_incomplete_work" name="scale_team[flag]"><input class="radio_buttons optional" id="scale_team_flag_incomplete_work" name="scale_team[flag]" value="incomplete_work" type="radio">Incomplete Work</label></span><span class="radio"><label for="scale_team_flag_no_author_file" name="scale_team[flag]"><input class="radio_buttons optional" id="scale_team_flag_no_author_file" name="scale_team[flag]" value="no_author_file" type="radio">No Author File</label></span><span class="radio"><label for="scale_team_flag_invalid_compilation" name="scale_team[flag]"><input class="radio_buttons optional" id="scale_team_flag_invalid_compilation" name="scale_team[flag]" value="invalid_compilation" type="radio">Invalid Compilation</label></span><span class="radio"><label for="scale_team_flag_norme" name="scale_team[flag]"><input class="radio_buttons optional" id="scale_team_flag_norme" name="scale_team[flag]" value="norme" type="radio">Norme</label></span><span class="radio"><label for="scale_team_flag_cheat" name="scale_team[flag]"><input class="radio_buttons optional" id="scale_team_flag_cheat" name="scale_team[flag]" value="cheat" type="radio">Cheat</label></span><span class="radio"><label for="scale_team_flag_crash" name="scale_team[flag]"><input class="radio_buttons optional" id="scale_team_flag_crash" name="scale_team[flag]" value="crash" type="radio">Crash</label></span></div></div>
+</div>
+<div class="scale-final-comments" id="comments-87">
+<p class="marked-title">Leave a comment on this correction</p>
+<div class="form-group text required scale_team_comment"><label class="text required col-sm-2 control-label" for="scale_team_comment"><abbr title="required">*</abbr> Comment</label><div class="col-sm-10"><textarea class="text required form-control" id="scale_team_comment" name="scale_team[comment]"></textarea></div></div>
+</div>
+<div class="scale-final-submit">
+<input class="btn btn-primary btn-block" data-disable-with="Finishing correction..." name="commit" value="Finish correction" type="submit">
+</div>
+</div>
+</div>
+</form>
+
+
+
+
+</div>
+</div>
+<div class="page-sidebar right-main-container page-sidebar-fixed-right under-main-navbar">
+<div class="app-sidebar-right" id="navbar-scale">
+<ul class="nav" role="tablist">
+<li class="dancer from-down" data-radio-item="flag">
+<h4 class="marked-title">Ratings</h4>
+<label class="active block-item label_flag_ok unpadded" for="scale_team_flag_ok" name="scale_team[flag]">
+<span class="icon-checkmark"></span>
+Ok
+</label>
+<label class="block-item label_flag_empty_work unpadded" for="scale_team_flag_empty_work" name="scale_team[flag]">
+<span class="icon-question-circle"></span>
+Empty work
+</label>
+<label class="block-item label_flag_incomplete_work unpadded" for="scale_team_flag_incomplete_work" name="scale_team[flag]">
+<span class="icon-exclamation-circle"></span>
+Incomplete work
+</label>
+<label class="block-item label_flag_no_author_file unpadded" for="scale_team_flag_no_author_file" name="scale_team[flag]">
+<span class="icon-user"></span>
+No author file
+</label>
+<label class="block-item label_flag_invalid_compilation unpadded" for="scale_team_flag_invalid_compilation" name="scale_team[flag]">
+<span class="icon-gears"></span>
+Invalid compilation
+</label>
+<label class="block-item label_flag_norme unpadded" for="scale_team_flag_norme" name="scale_team[flag]">
+<span class="icon-book"></span>
+Norme
+</label>
+<label class="block-item label_flag_cheat unpadded" for="scale_team_flag_cheat" name="scale_team[flag]">
+<span class="icon-times-circle"></span>
+Cheat
+</label>
+<label class="block-item label_flag_crash unpadded" for="scale_team_flag_crash" name="scale_team[flag]">
+<span class="icon-fire2"></span>
+Crash
+</label>
+</li>
+<li class="dancer from-down">
+<h4 class="marked-title">Presentation</h4>
+</li>
+<li class="dancer from-down">
+
+</li>
+<li class="dancer from-down">
+<a href="#introduction-87">Introduction</a>
+</li>
+<li class="dancer from-down">
+
+</li>
+<li class="dancer from-down">
+<a href="#guidelines-87">Guidelines</a>
+</li>
+<li class="dancer from-down">
+
+</li>
+<li class="dancer from-down">
+<h4 class="marked-title">Sections</h4>
+</li>
+<li class="dancer from-down">
+<a href="#section-361">Bonus</a>
+</li>
+<li class="dancer from-down">
+<a href="#section-356">Préliminaires</a>
+</li>
+<li class="dancer from-down">
+<a href="#section-357">Mission 00</a>
+</li>
+<li class="dancer from-down">
+<a href="#section-358">Mission 01</a>
+</li>
+<li class="dancer from-down">
+<a href="#section-359">Mission 02</a>
+</li>
+<li class="dancer from-down">
+<a href="#section-360">Mission 03</a>
+</li>
+<li class="dancer from-down">
+<h4 class="marked-title">Conclusion</h4>
+</li>
+<li class="dancer from-down">
+<a href="#comments-87">Comment</a>
+</li>
+</ul>
+</div>
+
+
+</div>
+<div class="right-sidebar-fix"></div>
+</div>
+<div aria-hidden="true" aria-labelledby="bugModalLabel" class="modal fade" id="smartModal" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-hidden="true" class="close" data-dismiss="modal" type="button">
+x
+</button>
+<h3 id="bugModalLabel">
+A bug ?
+</h3>
+</div>
+<div class="modal-body">
+<h4 class="note-title">Please wait...</h4>
+</div>
+<div class="modal-footer">
+<button aria-hidden="true" class="btn" data-dismiss="modal">Cancel</button>
+<button class="send btn btn-primary">Send</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="notifications-container"></div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', "UA-55986469-3", 'auto');
+  
+  ga('send', 'pageview');
+</script>
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-56406133-1']);
+  _gaq.push(['_setDomainName', 'intrav2.42.fr']);
+  _gaq.push(['_trackPageview']);
+</script>
+
+<div class="hide" data-cache="true"></div>
+<footer></footer>
+
+
+
+
+</body></html>

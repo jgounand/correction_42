@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
+<script src="Projects%20-%20Intra_fichiers/nr-1044.js"></script><script async="" src="Projects%20-%20Intra_fichiers/analytics.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"c0523a4102","applicationID":"61689050","transactionName":"dlYLFkZbW1wBQRdGVFRVAD1AUVZdFxxdUV5B","queueTime":0,"applicationTime":1696,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" name="viewport">
+<meta content="yes" name="mobile-web-app-capable">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="translucent-black" name="apple-mobile-web-app-status-bar-style">
+<meta content="Intranet 42" name="apple-mobile-web-app-title">
+<meta content="on" http-equiv="cleartype">
+<link href="https://cdn.intra.42.fr/" rel="preconnect">
+<link href="https://projects.intra.42.fr/assets/42_logo_black-684989d43d629b3c0ff6fd7e1157ee04db9bb7a73fba8ec4e01543d650a1c607.png" rel="icon" type="image/svg">
+<link href="https://projects.intra.42.fr/assets/42_logo_black-684989d43d629b3c0ff6fd7e1157ee04db9bb7a73fba8ec4e01543d650a1c607.png" rel="shortcut icon" type="image/svg">
+<link href="https://projects.intra.42.fr/opensearch.xml" rel="search" title="project" type="application/opensearchdescription+xml">
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"></script>
+<![endif]-->
+<script src="Projects%20-%20Intra_fichiers/raven.js"></script>
+<script src="Projects%20-%20Intra_fichiers/simplemde.js"></script>
+<title>Projects - Intra</title>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="ZTUChYyMRTB1aR51iMP3f0Hq6ZTO3xCVDCRHY1kqFA1yRqVz7RLS1hpErqEp9NZnWIOlgs3erIPwnrP+EjFYdA==">
+<link rel="stylesheet" media="all" href="Projects%20-%20Intra_fichiers/application-bb4c234b3001e7c3de784f63807dbc58c96c075aa7aeab5d.css">
+<script>
+  (function() {
+    this._user = {
+      "login": "pveniat",
+      "id": 10690,
+      "url": "https://profile.intra.42.fr/users/pveniat"
+    };
+  
+    this._consumer_address = 'wss://meta.intra.42.fr/cable';
+  
+  }).call(this);
+</script>
+<script>
+  (function() {
+    this._environment = "production";
+  
+    this._git_commit = "";
+  
+    this._release = "";
+  
+  }).call(this);
+</script>
+<script src="Projects%20-%20Intra_fichiers/application-d4aeac2f6ec9a81f2bf36548f092c6a6d17effc6126412294.js"></script>
+<link rel="stylesheet" href="Projects%20-%20Intra_fichiers/font-awesome.css"></head><body class=" ">
+<div class="notifications-flash-top-bar">
+
+</div>
+<script>
+  (function() {
+    this._notifCount = 0;
+  
+    this._flashes = [];
+  
+  }).call(this);
+</script>
+
+<div class="notifications-container" data-flashes-url="https://profile.intra.42.fr/flashes" data-notifications-url="https://profile.intra.42.fr/notifications" style="top: 80px; left: 1891.62px;">
+      <header class="notifications--header">
+        <span>notifications</span>
+        <a href="https://profile.intra.42.fr/notifications">See all notifications</a>
+      </header>
+      <ul class="menu-drop-list"></ul>
+    </div>
+
+<div class="main-navbar">
+<div class="main-navbar-left">
+<div class="main-navbar-logo" data-turbolinks-scaffold="">
+<a href="https://profile.intra.42.fr/"><img alt="42" src="Projects%20-%20Intra_fichiers/42_logo-7dfc9110a5319a308863b96bda33cea995046d1731cebb735e41.svg">
+</a></div>
+<span class="hidden-sidebars main-menu-trigger lines-button x" data-trigger-menu="">
+<span class="lines"></span>
+</span>
+<a class="search-mobile-button hidden-sidebars icon-search" href="https://profile.intra.42.fr/searches"></a>
+<form action="https://profile.intra.42.fr/searches/search" class="main-navbar-search hidden-xs js-search" data-forum-url="https://forum.intra.42.fr/topics/" data-project-url="https://projects.intra.42.fr/" data-user-url="https://profile.intra.42.fr/users/" method="get">
+<span class="twitter-typeahead" style="position: relative; display: inline-block;"><input autocomplete="off" autofocus="" class="search-input tt-input" name="query" placeholder="search..." spellcheck="false" dir="auto" style="position: relative; vertical-align: top;" aria-activedescendant="" aria-owns="undefined_listbox" role="combobox" aria-readonly="true" aria-autocomplete="list"><span role="status" aria-live="polite" class="visuallyhidden"></span><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;Noto Sans&quot;,&quot;Arial&quot;,&quot;Helvetica&quot;,&quot;Sans serif&quot;; font-size: 22.4px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: optimizelegibility; text-transform: none;"></pre><div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;" aria-expanded="false"><div role="presentation" class="tt-dataset tt-dataset-0"></div><div role="presentation" class="tt-dataset tt-dataset-1"></div><div role="presentation" class="tt-dataset tt-dataset-2"></div></div></span>
+</form>
+</div>
+<div class="main-navbar-user-nav" data-turbolinks-scaffold="">
+<div class="user-actions hidden-xs">
+<span class="dropdown" id="quest-menu">
+<a class="user-action labelable" data-toggle="dropdown" href="#">
+<span class="icon-bookmark-3-1 user-action-icon labelable"></span>
+</a>
+<ul aria-labelledby="quest-menu" class="quest-container dropdown-menu dropdown-menu-right" role="menu">
+<p class="quest-legend">
+CURRENT MAIN QUEST
+</p>
+<li class="quest-item">
+<h4 class="quest-header">Savoir Relier</h4>
+<p class="quest-description">Validate the Savoir Relier project.
+</p>
+</li>
+<li>
+<a href="https://profile.intra.42.fr/users/me/quests">See all quests</a>
+</li>
+</ul>
+</span>
+</div>
+<div class="user-actions hidden-xs">
+<a class="user-action labelable" data-notification-drop="" href="#"><span class="icon-newspaper-2 user-action-icon"></span>
+<span class="user-action-count labeled" data-counter-count="0">0</span>
+</a></div>
+<span class="dropdown">
+<a data-toggle="dropdown" href="#">
+<span data-login="pveniat">
+pveniat
+</span>
+<div class="user-profile-picture visible-sidebars" style="background-image: url(https://cdn.intra.42.fr/users/small_pveniat.jpg)"></div>
+</a>
+<ul aria-labelledby="User menu" class="dropdown-menu" role="menu">
+<li>
+<a href="https://profile.intra.42.fr/slots"><span class="iconf-calendar"></span>
+Manage slots
+</a></li>
+<li>
+<a href="https://profile.intra.42.fr/users/pveniat"><span class="iconf-user"></span>
+View my profile
+</a></li>
+<li>
+<a href="https://profile.intra.42.fr/languages">Settings
+</a></li>
+<li class="visible-xs">
+<a rel="nofollow" data-method="delete" href="https://signin.intra.42.fr/users/sign_out"><span class="iconf-power-off"></span>
+Logout
+</a></li>
+</ul>
+</span>
+
+<!-- frshp notifications -->
+<!-- = link_to("#{Rails.application.config.module_url['profile']}/friends", :class => "user-action labelable") do -->
+<!-- %span.icon-user -->
+<!-- %span.labeled= current_user.invitations.count -->
+<div class="user-actions">
+<a class="user-action labelable" rel="nofollow" data-method="delete" href="https://signin.intra.42.fr/users/sign_out"><span class="icon-power-off unlabeled"></span>
+</a></div>
+</div>
+</div>
+
+<div class="page">
+<div class="left-sidebar-fix with-main-menu"></div>
+<div class="page-sidebar left-main-container page-sidebar-fixed-left under-main-navbar"><ul class="main-left-navbar">
+<li>
+<a class="inactive" href="https://profile.intra.42.fr/"><span class="icon-user-2"></span>
+<span class="visible-overlay">
+Profile
+</span>
+</a></li>
+<li>
+<a class="active" href="https://projects.intra.42.fr/"><span class="icon-network-2-1"></span>
+<span class="visible-overlay">
+Projets
+</span>
+</a></li>
+<li>
+<a class="inactive" href="https://elearning.intra.42.fr/"><span class="icon-movie-play-1"></span>
+<span class="visible-overlay">
+E-learning
+</span>
+</a></li>
+<li>
+<a class="inactive" href="https://forum.intra.42.fr/"><span class="icon-bubble-conversation-5"></span>
+<span class="visible-overlay">
+Forum
+</span>
+</a></li>
+<li>
+<a class="inactive" href="https://companies.intra.42.fr/"><span class="icon-briefcase"></span>
+<span class="visible-overlay">
+Companies
+</span>
+</a></li>
+<li>
+<a class="inactive" href="https://meta.intra.42.fr/"><span class="icon-compass-2"></span>
+<span class="visible-overlay">
+Meta
+</span>
+</a></li>
+<li>
+<a class="inactive" href="https://shop.intra.42.fr/"><span class="icon-shopping-1"></span>
+<span class="visible-overlay">
+Shop
+</span>
+</a></li>
+</ul><div class="app-sidebar-left">
+<div class="marked-title inverse">Go to</div>
+<div class="projects-menu-list">
+<a class="project-item sidebar-item" href="https://projects.intra.42.fr/"><span class="icon-briefcase project-status-icon"></span>
+My projects
+</a><a class="project-item sidebar-item" href="https://projects.intra.42.fr/projects/graph"><span class="iconf-location project-status-icon"></span>
+All projects
+</a><a class="project-item sidebar-item" href="https://projects.intra.42.fr/projects/list"><span class="icon-list-1 project-status-icon"></span>
+List projects
+</a></div>
+<div class="marked-title inverse">Your projects</div>
+<div class="projects-menu-list">
+<a class="project-item sidebar-item" href="https://projects.intra.42.fr/projects/malloc">Malloc
+</a><a class="project-item sidebar-item" href="https://projects.intra.42.fr/projects/minishell">minishell
+</a></div>
+</div></div>
+<div class="page-content" data-turbolinks-scaffold="">
+<div class="row">
+<div class="main-top-menu">
+
+</div>
+<div class="container-item">
+<h1 class="main-title primary">
+Scale for project
+
+<a href="https://projects.intra.42.fr/projects/nm-otool">Nm-otool</a>
+<div class="marked-title">You should correct 1 student in this team</div>
+<!-- -------- La liste des personnes du groupe ------- -->
+<div class="team-users-list">
+<div class="team-user-item">
+<div class="square-s bg-image-item rounded" data-placement="bottom" data-toggle="tooltip" style="background-image: url(https://cdn.intra.42.fr/users/small_rabougue.jpg)" title="" data-original-title="rabougue"></div>
+<div class="team-user-item-actions">
+<div class="team-user-role rounded bprima"></div>
+<span class="iconf-star-1 leader-user" data-placement="bottom" data-toggle="tooltip" title="" data-original-title="Team leader"></span>
+</div>
+</div>
+</div>
+</h1><h4 class="marked-title">Git repository</h4>
+<div class="container-inner-item project-repo">
+<div class="input-group">
+<input class="repo-url form-control" disabled="disabled" value="vogsphere@vogsphere.42.fr:intra/2017/activities/nm_otool/rabougue" type="text">
+<span class="copy input-group-addon" data-clipboard-text="vogsphere@vogsphere.42.fr:intra/2017/activities/nm_otool/rabougue">
+<span class="icon-paste"></span>
+</span>
+</div>
+</div>
+
+
+<div class="scale-introduction dancer from-down" id="introduction-46">
+<h3>Introduction</h3>
+<p>
+Nous vous demandons, pour le bon déroulement de cette notation :
+<br>
+<br>- De rester courtois, poli, respectueux, constructif, lors de cet 
+échange. Le lien de confiance entre la communauté 42 et vous en dépend.
+<br>- De bien mettre en évidence auprès de la personne notée (ou du groupe) les dysfonctionnements éventuels.
+<br>- D'accepter qu'il puisse y avoir parfois des différences 
+d’interprétation sur les demandes du sujet ou l’étendue des 
+fonctionnalités. Restez ouvert d'esprit face a la vision de l'autre 
+(a-t-il raison ou tort ?), et notez le plus honnêtement possible.
+<br>
+<br>Bonne soutenance à tous !
+<br>
+</p>
+</div>
+<div class="scale-guidelines dancer from-down" id="guidelines-46">
+<h3>Guidelines</h3>
+<p>
+Pour la correction de ce projet:
+<br>
+<br>Ne sont pas éliminatoires :
+<br>- Nm : Format de la sortie et/ou ordre des informations différents du binaire système.
+<br>- Otool : Format de la sortie différent du binaire système.
+<br>
+<br>Est éliminatoire :
+<br>- Informations manquantes dans la sortie par rapport au binaire système.
+<br>
+</p>
+</div>
+
+</div>
+<div class="container-item dancer from-down" id="attachments-46">
+<h2>Attachments</h2>
+<div class="project-attachments-list">
+</div>
+
+
+<div class="project-attachments-list">
+<div class="project-attachment-item">
+<h4 class="attachment-name">
+<span class="icon-file"></span>
+<a target="_blank" href="https://cdn.intra.42.fr/pdf/pdf/1079/nm.pdf">Sujet</a>
+</h4>
+</div>
+</div>
+
+
+</div>
+
+<form novalidate="novalidate" class="simple_form form-horizontal edit_scale_team" id="edit_scale_team_796123" action="/projects/nm-otool/project_sessions/262/evaluations/44/scales/46/scale_teams/796123" accept-charset="UTF-8" method="post"><input name="utf8" value="✓" type="hidden"><input name="_method" value="patch" type="hidden"><input name="authenticity_token" value="ZTUChYyMRTB1aR51iMP3f0Hq6ZTO3xCVDCRHY1kqFA1yRqVz7RLS1hpErqEp9NZnWIOlgs3erIPwnrP+EjFYdA==" type="hidden"><div class="container-item scale-section-answers">
+<h2 class="main-title primary">Sections</h2>
+<div class="on-grey">
+<section class="scale-section-item dancer from-down" id="section-191">
+<h3 class="main-title">Préliminaires</h3>
+<p>Vous utiliserez les codes suivants pour tester le rendu :
+
+
+$&gt; cat test_facile.c
+
+
+#include &lt;stdio.h&gt;
+
+
+
+int main(void)
+
+
+{
+
+
+  puts("Test facile");
+
+
+  return (0);
+
+
+}
+
+
+$&gt; cat test_moins_facile.c
+
+
+#include &lt;stdio.h&gt;
+
+
+
+int une_globale = 40;
+
+
+
+int main(void)
+
+
+{
+
+
+  printf("La globale vaut: %d\n", une_globale);
+
+
+  return (0);
+
+
+}
+
+
+    $&gt; cc test_facile.c -o test_facile
+
+
+    $&gt; cc test_moins_facile.c -o test_moins_facile
+
+
+    $&gt; cc -m32 test_moins_facile.c -o test_moins_facile_32-bit
+
+
+    $&gt;
+
+En cas de doute, pour identifier un binaire (type/architecture): man 1 file
+
+
+    En cas de difficulté pour localiser un binaire universel, une recherche dans le PATH:
+
+
+    (IFS=$'\n'; for d in ${PATH//:/$IFS}; do find "$d" -type f -exec file '{}' \+ | grep -i -A3 universal ; done)
+
+    Pour créer un binaire universel:
+
+
+    clang/gcc: -m32 pour cross-compiler explicitement en 32-bit.
+
+
+    lipo -create -output &lt;universel&gt; &lt;binaire arch. 1&gt; &lt;binaire arch. 2&gt; ...
+
+    En cas de difficulté pour localiser une bibliothèque dynamique (.so, .dylib):
+
+
+    find /usr/lib -type f -iname '*\.dylib' 2&gt;/dev/null</p>
+<h4 class="scale-question-name">Tests préliminaires</h4>
+<p class="scale-section-guidelines">
+Vérifiez d'abord les éléments suivants :
+<br>
+<br>- Il y a bien un rendu (dans le dépôt git)
+<br>- Fichier auteur valide
+<br>- Le Makefile est présent et compile bien les exécutables ft_nm et ft_otool
+<br>- Pas de faute de norme, la Norminette faisant foi
+<br>- Pas de triche (fonctions autorisées, l'étudiant peut expliquer son code, ...)
+<br>
+<br>Si un élément n'est pas conforme au sujet, la notation s'arrête la. 
+Vous êtes encouragés à continuer de débattre du projet, mais le barème 
+n'est pas appliqué.
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][0][id]" id="scale_team_answer_id" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="426" name="[scale_team][answers_attributes][0][question_id]" id="scale_team_answer_question_id" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][0][value]" id="radio_[scale_team][answers_attributes][0]_true" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][0]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][0][value]" id="radio_[scale_team][answers_attributes][0]_false" value="0" checked="checked" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][0]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+</section>
+<section class="scale-section-item dancer from-down" id="section-192">
+<h3 class="main-title">Tests de fonctionnalité pour nm</h3>
+<p></p>
+<h4 class="scale-question-name">Nm: test facile</h4>
+<p class="scale-section-guidelines">
+Testez ft_nm sur le binaire du test facile.
+<br>La sortie est conforme à celle du nm de référence.
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][1][id]" id="scale_team_answer_id" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="427" name="[scale_team][answers_attributes][1][question_id]" id="scale_team_answer_question_id" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][1][value]" id="radio_[scale_team][answers_attributes][1]_true" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][1]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][1][value]" id="radio_[scale_team][answers_attributes][1]_false" value="0" checked="checked" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][1]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Test moins facile</h4>
+<p class="scale-section-guidelines">
+      Testez ft_nm sur les binaires du test moins facile.
+<br>      Sur les binaires 32 et 64-bit, la sortie de ft_nm est toujours
+ identique à celle du nm de référence, quel que soit le test effectué 
+(aucune sortie avec diff).
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][2][id]" id="scale_team_answer_id" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="428" name="[scale_team][answers_attributes][2][question_id]" id="scale_team_answer_question_id" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][2][value]" id="radio_[scale_team][answers_attributes][2]_true" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][2]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][2][value]" id="radio_[scale_team][answers_attributes][2]_false" value="0" checked="checked" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][2]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Format et ordre</h4>
+<p class="scale-section-guidelines">
+La sortie de ft_nm est toujours identique à celle du nm de référence, quelque soit le test effectué (pas de diff).
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][3][id]" id="scale_team_answer_id" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="429" name="[scale_team][answers_attributes][3][question_id]" id="scale_team_answer_question_id" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][3][value]" id="radio_[scale_team][answers_attributes][3]_true" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][3]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][3][value]" id="radio_[scale_team][answers_attributes][3]_false" value="0" checked="checked" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][3]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Arguments multiples</h4>
+<p class="scale-section-guidelines">
+Le ft_nm gère les arguments multiples.
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][4][id]" id="scale_team_answer_id" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="430" name="[scale_team][answers_attributes][4][question_id]" id="scale_team_answer_question_id" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][4][value]" id="radio_[scale_team][answers_attributes][4]_true" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][4]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][4][value]" id="radio_[scale_team][answers_attributes][4]_false" value="0" checked="checked" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][4]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Fichiers objets</h4>
+<p class="scale-section-guidelines">
+  Testez ft_nm sur des exemplaires 32 et 64-bits d'un fichier objet (.o).
+<br>      La sortie est conforme à celle du nm de reference.
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][5][id]" id="scale_team_answer_id" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="431" name="[scale_team][answers_attributes][5][question_id]" id="scale_team_answer_question_id" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][5][value]" id="radio_[scale_team][answers_attributes][5]_true" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][5]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][5][value]" id="radio_[scale_team][answers_attributes][5]_false" value="0" checked="checked" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][5]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Bibliothèques dynamiques</h4>
+<p class="scale-section-guidelines">
+Testez ft_nm sur une bibliothèque dynamique (*.dylib *.so) (voir dans /usr/lib/).
+<br>La sortie est conforme à celle du nm de reference.
+<br>L'ordre des symboles de nom identique est arbitraire et peut différer.
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][6][id]" id="scale_team_answer_id" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="432" name="[scale_team][answers_attributes][6][question_id]" id="scale_team_answer_question_id" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][6][value]" id="radio_[scale_team][answers_attributes][6]_true" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][6]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][6][value]" id="radio_[scale_team][answers_attributes][6]_false" value="0" checked="checked" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][6]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Binaire universel</h4>
+<p class="scale-section-guidelines">
+Testez ft_nm sur un binaire universel (exemple: /usr/bin/python).
+<br>Vérifiez qu'il s'agit bien d'un universel avec la commande "file <binaire>".
+<br>La sortie est conforme à celle du nm de reference.
+<br>L'ordre des symboles de nom identique est arbitraire et peut différer.
+<br>
+</binaire></p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][7][id]" id="scale_team_answer_id" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="433" name="[scale_team][answers_attributes][7][question_id]" id="scale_team_answer_question_id" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][7][value]" id="radio_[scale_team][answers_attributes][7]_true" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][7]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][7][value]" id="radio_[scale_team][answers_attributes][7]_false" value="0" checked="checked" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][7]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+</section>
+<section class="scale-section-item dancer from-down" id="section-193">
+<h3 class="main-title">Tests de fonctionnalité pour otool</h3>
+<p></p>
+<h4 class="scale-question-name">Otool: test facile</h4>
+<p class="scale-section-guidelines">
+Testez ft_otool sur le binaire du test facile.
+<br>La sortie est conforme à celle de otool -t.
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][8][id]" id="scale_team_answer_id" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="434" name="[scale_team][answers_attributes][8][question_id]" id="scale_team_answer_question_id" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][8][value]" id="radio_[scale_team][answers_attributes][8]_true" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][8]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][8][value]" id="radio_[scale_team][answers_attributes][8]_false" value="0" checked="checked" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][8]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Format et ordre</h4>
+<p class="scale-section-guidelines">
+Sur les binaires 32 et 64-bit, la sortie de ft_otool est toujours 
+identique à celle de otool -t, quel que soit le test effectué (aucune 
+sortie avec diff).
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][9][id]" id="scale_team_answer_id" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="435" name="[scale_team][answers_attributes][9][question_id]" id="scale_team_answer_question_id" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][9][value]" id="radio_[scale_team][answers_attributes][9]_true" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][9]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][9][value]" id="radio_[scale_team][answers_attributes][9]_false" value="0" checked="checked" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][9]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Arguments multiples</h4>
+<p class="scale-section-guidelines">
+Le ft_otool gère les arguments multiples.
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][10][id]" id="scale_team_answer_id" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="436" name="[scale_team][answers_attributes][10][question_id]" id="scale_team_answer_question_id" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][10][value]" id="radio_[scale_team][answers_attributes][10]_true" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][10]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][10][value]" id="radio_[scale_team][answers_attributes][10]_false" value="0" checked="checked" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][10]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Fichiers objets</h4>
+<p class="scale-section-guidelines">
+Testez ft_otool sur des exemplaires 32 et 64-bits d'un fichier objet (.o).
+<br>La sortie est conforme à celle de otool -t.
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][11][id]" id="scale_team_answer_id" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="437" name="[scale_team][answers_attributes][11][question_id]" id="scale_team_answer_question_id" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][11][value]" id="radio_[scale_team][answers_attributes][11]_true" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][11]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][11][value]" id="radio_[scale_team][answers_attributes][11]_false" value="0" checked="checked" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][11]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Bibliothèques dynamiques</h4>
+<p class="scale-section-guidelines">
+Testez ft_otool sur une bibliothèque dynamique (*.dylib *.so) (voir dans /usr/lib/).
+<br>La sortie est conforme à celle de otool -t.
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][12][id]" id="scale_team_answer_id" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="438" name="[scale_team][answers_attributes][12][question_id]" id="scale_team_answer_question_id" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][12][value]" id="radio_[scale_team][answers_attributes][12]_true" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][12]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][12][value]" id="radio_[scale_team][answers_attributes][12]_false" value="0" checked="checked" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][12]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+<h4 class="scale-question-name">Binaire universel</h4>
+<p class="scale-section-guidelines">
+Testez ft_otool sur un binaire universel (exemple: /usr/bin/python).
+<br>Vérifiez qu'il s'agit bien d'un universel avec la commande "file <binaire>".
+<br>La sortie est conforme à celle de otool -t.
+</binaire></p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][13][id]" id="scale_team_answer_id" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="439" name="[scale_team][answers_attributes][13][question_id]" id="scale_team_answer_question_id" type="hidden"></div></div>
+<div class="btn-group block">
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][13][value]" id="radio_[scale_team][answers_attributes][13]_true" value="1" type="radio">
+<label class="btn btn-success checkbox-label light-bg" for="radio_[scale_team][answers_attributes][13]_true">
+<span class="icon-check"></span>
+Yes
+</label>
+<input autocomplete="off" class="checkbox-input" name="[scale_team][answers_attributes][13][value]" id="radio_[scale_team][answers_attributes][13]_false" value="0" checked="checked" type="radio">
+<label class="btn btn-danger checkbox-label light-bg" for="radio_[scale_team][answers_attributes][13]_false">
+<span class="icon-times"></span>
+No
+</label>
+</div>
+</div>
+</section>
+<section class="scale-section-item dancer from-down" id="section-194">
+<h3 class="main-title">Bonus</h3>
+<p></p>
+<h4 class="scale-question-name">Des bonus</h4>
+<p class="scale-section-guidelines">
+Comptez dans cette partie les fonctionnalités bonus distinctes. Vous pouvez noter jusqu'à 5 bonus disctincts.
+<br>
+<br>Chaque bonus doit être :
+<br>- Un minimum utile (à votre discrétion)
+<br>- Bien réalisé et 100% fonctionnel
+<br>
+</p>
+<div class="scale-question-answers">
+<div class="form-group hidden scale_team_answer_id"><div class="col-sm-10"><input class="form-control hidden" name="[scale_team][answers_attributes][14][id]" id="scale_team_answer_id" type="hidden"></div></div>
+<div class="form-group hidden scale_team_answer_question_id"><div class="col-sm-10"><input class="form-control hidden" value="440" name="[scale_team][answers_attributes][14][question_id]" id="scale_team_answer_question_id" type="hidden"></div></div>
+<div class="marked-title text-center">Rate it from 0 (failed) through 5 (excellent)</div>
+<input autocomplete="off" class="star-range" data-star-range="" max="5" name="[scale_team][answers_attributes][14][value]" step="1" value="0" style="position: absolute; width: 1px; height: 1px; overflow: hidden; opacity: 0;" type="range"><div class="rangeslider rangeslider--horizontal" id="js-rangeslider-0"><div class="rangeslider__fill" style="width: 20px;"></div><div class="rangeslider__handle" style="left: 0px;"></div></div>
+<hr>
+</div>
+</section>
+</div>
+</div>
+<div class="container-item dancer from-down" id="ratings-46">
+<h2>Ratings</h2>
+<p class="marked-title">Don’t forget to check the flag corresponding to the defense</p>
+<div class="btn-group block flags-buttons" data-radio-item="flag-small">
+<label class="btn btn-default btn-success label_flag_ok on-active positive" for="scale_team_flag_id_1" name="scale_team[flag_id]">
+<span class="iconf-check-4"></span>
+Ok
+</label>
+<label class="btn btn-default btn-success label_flag_outstanding_project on-active positive" for="scale_team_flag_id_9" name="scale_team[flag_id]">
+<span class="iconf-star-1"></span>
+Outstanding project
+</label>
+</div>
+<div class="btn-group block flags-buttons" data-radio-item="flag-small">
+<label class="btn btn-danger btn-default label_flag_empty_work negative on-active" for="scale_team_flag_id_2" name="scale_team[flag_id]">
+<span class="iconf-file-1"></span>
+Empty work
+</label>
+<label class="btn btn-danger btn-default label_flag_incomplete_work negative on-active" for="scale_team_flag_id_3" name="scale_team[flag_id]">
+<span class="iconf-file-attention"></span>
+Incomplete work
+</label>
+<label class="btn btn-danger btn-default label_flag_no_author_file negative on-active" for="scale_team_flag_id_4" name="scale_team[flag_id]">
+<span class="iconf-bubble-attention-4"></span>
+No author file
+</label>
+<label class="btn btn-danger btn-default label_flag_invalid_compilation negative on-active" for="scale_team_flag_id_5" name="scale_team[flag_id]">
+<span class="iconf-skull-2"></span>
+Invalid compilation
+</label>
+<label class="btn btn-danger btn-default label_flag_norme negative on-active" for="scale_team_flag_id_6" name="scale_team[flag_id]">
+<span class="iconf-receipt-1"></span>
+Norme
+</label>
+<label class="btn btn-danger btn-default label_flag_cheat negative on-active" for="scale_team_flag_id_7" name="scale_team[flag_id]">
+<span class="iconf-layers"></span>
+Cheat
+</label>
+<label class="btn btn-danger btn-default label_flag_crash negative on-active" for="scale_team_flag_id_8" name="scale_team[flag_id]">
+<span class="iconf-bomb"></span>
+Crash
+</label>
+</div>
+</div>
+
+<div class="container-item">
+<h2 class="main-title primary">Conclusion</h2>
+<div class="on-grey">
+<div class="scale-final-evaluation hidden">
+<div class="form-group radio_buttons optional scale_team_flag"><label class="col-sm-2 control-label radio_buttons optional">Flag</label><div class="col-sm-10"><input name="scale_team[flag_id]" value="" type="hidden"><span class="radio"><label for="scale_team_flag_id_1"><input class="radio_buttons optional" value="1" checked="checked" name="scale_team[flag_id]" id="scale_team_flag_id_1" type="radio">Ok</label></span><span class="radio"><label for="scale_team_flag_id_2"><input class="radio_buttons optional" value="2" name="scale_team[flag_id]" id="scale_team_flag_id_2" type="radio">Empty work</label></span><span class="radio"><label for="scale_team_flag_id_3"><input class="radio_buttons optional" value="3" name="scale_team[flag_id]" id="scale_team_flag_id_3" type="radio">Incomplete work</label></span><span class="radio"><label for="scale_team_flag_id_4"><input class="radio_buttons optional" value="4" name="scale_team[flag_id]" id="scale_team_flag_id_4" type="radio">No author file</label></span><span class="radio"><label for="scale_team_flag_id_5"><input class="radio_buttons optional" value="5" name="scale_team[flag_id]" id="scale_team_flag_id_5" type="radio">Invalid compilation</label></span><span class="radio"><label for="scale_team_flag_id_6"><input class="radio_buttons optional" value="6" name="scale_team[flag_id]" id="scale_team_flag_id_6" type="radio">Norme</label></span><span class="radio"><label for="scale_team_flag_id_7"><input class="radio_buttons optional" value="7" name="scale_team[flag_id]" id="scale_team_flag_id_7" type="radio">Cheat</label></span><span class="radio"><label for="scale_team_flag_id_8"><input class="radio_buttons optional" value="8" name="scale_team[flag_id]" id="scale_team_flag_id_8" type="radio">Crash</label></span><span class="radio"><label for="scale_team_flag_id_9"><input class="radio_buttons optional" value="9" name="scale_team[flag_id]" id="scale_team_flag_id_9" type="radio">Outstanding project</label></span></div></div>
+</div>
+<div class="scale-final-comments" id="comments-46">
+<p class="marked-title">Leave a comment on this evaluation</p>
+<div class="form-group text required scale_team_comment"><label class="col-sm-2 control-label text required" for="scale_team_comment"><abbr title="required">*</abbr> Comment</label><div class="col-sm-10"><textarea class="form-control text required" required="required" aria-required="true" name="scale_team[comment]" id="scale_team_comment"></textarea></div></div>
+</div>
+<input id="token" name="token" class="hidden" type="hidden">
+<div class="scale-final-submit">
+<input class="btn btn-primary btn-block" data-disable-with="Finishing evaluation..." name="commit" value="Finish evaluation" type="submit">
+</div>
+</div>
+</div>
+</form>
+
+
+
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="smartModalLabel" class="modal fade" id="smartModal" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-hidden="true" class="close" data-dismiss="modal" type="button">
+x
+</button>
+<h3 id="smartModalLabel">
+
+</h3>
+</div>
+<div class="modal-body">
+<h4 class="note-title"></h4>
+</div>
+<div class="modal-footer">
+<button aria-hidden="true" class="btn" data-dismiss="modal">Cancel</button>
+<button class="send btn btn-primary">Send</button>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="flashModalLabel" class="modal fade" id="flashModal" role="dialog" tabindex="-1">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-hidden="true" class="close" data-dismiss="modal" type="button">
+x
+</button>
+<h3 id="flashModalLabel"></h3>
+</div>
+<div class="modal-body">
+<h4 class="note-title">Flash modal content (raw)</h4>
+</div>
+<div class="modal-footer">
+<button aria-hidden="true" class="btn btn-block btn-default" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+  function google_analytics() {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+    ga('create', "UA-55986469-3", 'auto');
+  
+    ga('send', 'pageview');
+  }
+  
+  if (!document.documentElement.hasAttribute("data-turbolinks-preview"))
+    google_analytics();
+</script>
+
+<div data-cache="true" class="hide"></div>
+
+<script>
+  var jsClasses = ["new_message", "topic-reply"];
+  jsClasses.forEach(function(className) {
+    Array.prototype.forEach.call(document.getElementsByClassName(className), function (e) {
+      e.classList.add("js-hidden");
+    });
+  });
+</script>
+
+
+
+<div class="sdOverlay" style="position: fixed; top: 0px; left: 0px; margin: 0px; padding: 0px; min-height: 100%; min-width: 100%; background: -moz-linear-gradient(270deg, rgb(0, 0, 0) 100%, transparent 100%) repeat scroll 0% 0%, -moz-linear-gradient(180deg, rgb(0, 0, 0) 100%, transparent 100%) repeat scroll 0% 0%, -moz-linear-gradient(90deg, rgb(0, 0, 0) 100%, transparent 100%) repeat scroll 0% 0%, transparent -moz-linear-gradient(0deg, rgb(0, 0, 0) 100%, transparent 100%) repeat scroll 0% 0%; opacity: 0.5; pointer-events: none; z-index: 2147483647;"></div></body></html>
